@@ -1,0 +1,12 @@
+{
+  "author": "Christopher Harrison",
+  "name": "node-http-write",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "HTTP response writer",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wtsi-hgi/node-http-write.git"
+  }
+}
