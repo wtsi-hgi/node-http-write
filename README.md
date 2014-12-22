@@ -53,7 +53,7 @@ desired, with the following template tags:
 Return the template given by `id`, merged with the key-value pairs
 provided in `data` (where keys correspond to template tags). This
 probably won't be used by you directly -- as it's called internally by
-the main HTTP writer, but can be useful if you want to create a new
+the main HTTP writer -- but can be useful if you want to create a new
 template based on another (i.e., by specifying no `data`).
 
 For example, using the definitions from above:
@@ -76,9 +76,11 @@ httpWrite.headers(200, {'Content-Type': 'application/json'});
 
 ...will write:
 
-    Status: 200 OK
-    Content-Type: application/json
-    
+```http
+Status: 200 OK
+Content-Type: application/json
+
+```
 
 Note that you can only write the HTTP headers once. If you attempt to
 call it again, an exception will be thrown and the parent server should
@@ -102,7 +104,7 @@ For example:
 httpWrite.body('Hello World!');
 
 // Output 'pageHeader' template with respective values
-httpWrite.body('pageHeader', {title: ''});
+httpWrite.body('pageHeader', {title: 'An Example'});
 ```
 
 n.b., If you haven't explicitly written any headers at this point, a
