@@ -1,7 +1,7 @@
 {
   "author": "Christopher Harrison",
   "name": "node-http-write",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "description": "HTTP response writer",
   "main": "index.js",

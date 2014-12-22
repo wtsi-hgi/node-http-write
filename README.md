@@ -110,6 +110,15 @@ httpWrite.body('pageHeader', {title: 'An Example'});
 n.b., If you haven't explicitly written any headers at this point, a
 default *200 OK* header, in `text/html`, will be written.
 
+## `httpWrite.error(status, body)`
+
+Send the HTTP `status` code and apply it and `body` to the builtin
+`_error` template. This outputs a simple, but relatively useful error
+page to the client.
+
+n.b., `status` can technically be anything. It probably should be a 4xx
+or 5xx code, though!
+
 # MIT License
 
 Copyright (c) 2014 Genome Research Limited
